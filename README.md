@@ -1,6 +1,6 @@
 # Superphenix website
 
-Public marketing site for the [Superphenix](https://docs.superphenix.net) project, built with Vite, React, TypeScript, and Tailwind CSS.
+Landing page for the [Superphenix](https://superphenix.net) project, built with Vite, React, TypeScript, and Tailwind CSS.
 
 ## Local development
 
@@ -15,7 +15,7 @@ npm run test
 npm run build
 ```
 
-## Deploy to GitHub Pages
+## Deploy to GitHub Pages (production)
 
 1. Create a GitHub repository and push this project (default branch `main`).
 2. In the repository, go to **Settings → Pages**.

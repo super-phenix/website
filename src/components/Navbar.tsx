@@ -16,9 +16,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center gap-6 text-sm text-muted-foreground">
             <a href="#superphenix" className="hover:text-foreground transition-colors">{t.platform}</a>
             <a href="#pillars" className="hover:text-foreground transition-colors">{t.architecture}</a>
-            <a href="#open-source" className="hover:text-foreground transition-colors">{t.openSource}</a>
             <a href="https://docs.superphenix.net" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">{t.docs}</a>
-            <a href="#enterprise" className="hover:text-foreground transition-colors">{t.enterprise}</a>
           </div>
         </div>
         <div className="flex items-center gap-2 sm:gap-4">

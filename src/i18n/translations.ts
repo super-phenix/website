@@ -3,9 +3,7 @@ const translations = {
     nav: {
       platform: "Superphenix",
       architecture: "Architecture",
-      openSource: "Open Source",
       docs: "Documentation",
-      enterprise: "Enterprise Support",
       contact: "Enterprise Support",
       themeToLight: "Switch to light mode",
       themeToDark: "Switch to dark mode",
@@ -133,9 +131,7 @@ const translations = {
     nav: {
       platform: "Superphenix",
       architecture: "Architecture",
-      openSource: "Open Source",
       docs: "Documentation",
-      enterprise: "Support entreprise",
       contact: "Support entreprise",
       themeToLight: "Passer en mode clair",
       themeToDark: "Passer en mode sombre",
