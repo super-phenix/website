@@ -28,7 +28,7 @@ const FooterCTA = () => {
               </a>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <a href="https://github.com/super-phenix" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/super-phenix/superphenix" target="_blank" rel="noopener noreferrer">
                 <Github className="h-4 w-4 mr-2" /> {t.ctaGithub}
               </a>
             </Button>
@@ -44,7 +44,7 @@ const FooterCTA = () => {
             <a href="https://docs.superphenix.net" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors inline-flex items-center gap-1">
               {t.docs} <ArrowUpRight className="h-3 w-3" />
             </a>
-            <a href="https://github.com/super-phenix" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors inline-flex items-center gap-1">
+            <a href="https://github.com/super-phenix/superphenix" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors inline-flex items-center gap-1">
               {t.github} <ArrowUpRight className="h-3 w-3" />
             </a>
             <a href="https://rayshift.net" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors inline-flex items-center gap-1">

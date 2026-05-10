@@ -22,24 +22,24 @@ const translations = {
     },
     problem: {
       tag: "The Problem",
-      title: "Legacy virtualization is a dead end",
-      description: "Cloud service providers built their businesses on proprietary stacks. Now they're trapped: paying more for less, unable to innovate, and locked into architectures that don't scale.",
+      title: "Legacy proprietary solutions are a dead end",
+      description: "Cloud providers built on proprietary stacks and got trapped: higher costs, less control, and slower innovation.",
       items: [
-        { title: "Vendor Lock-in", description: "Proprietary virtualization stacks create deep dependencies. Migrating away costs years and millions." },
-        { title: "Rising Licensing Costs", description: "Post-acquisition pricing shocks are devastating small and mid-size cloud providers. Margins are evaporating." },
-        { title: "Fragile Economics", description: "Legacy architectures weren't designed for today's scale. Operational complexity compounds with every node added." },
+        { title: "Vendor Lock-in", description: "Proprietary cloud stacks such as VMware or Nutanix create deep dependencies." },
+        { title: "Rising Licensing Costs", description: "Prices keep rising and providers have little leverage. Margins can disappear overnight if vendors decide so." },
+        { title: "Fragile Economics", description: "Legacy architectures were not built for modern usage. Most cloud stacks solve one layer, not the full IaaS-to-PaaS-to-SaaS spectrum." },
       ],
     },
     platform: {
       tag: "What is Superphenix",
-      title: "A full cloud stack running on Kubernetes",
-      description: "Superphenix turns Kubernetes into a full cloud platform: virtualization, networking, storage, and service operations managed through GitOps. Build and run your own CSP-grade infrastructure without proprietary lock-in.",
-      origin: "Born from real CSP operations, Superphenix is now an open project for teams that want sovereign infrastructure with transparent architecture and production-grade workflows.",
+      title: "A full cloud stack running on your own hardware",
+      description: "Superphenix turns your hardware into a full cloud platform: virtualization, networking, storage, and service operations managed from a console or via GitOps.",
+      origin: "Born inside a cloud provider escaping its legacy stack, Superphenix is now an open project for teams that want sovereign infrastructure with a transparent, production-grade architecture.",
       items: [
-        { label: "Kubernetes control plane", desc: "Single API surface for everything" },
+        { label: "Based on Kubernetes", desc: "Superphenix uses Kubernetes as its underlying control plane, exposing one API to manage everything." },
         { label: "Virtualization", desc: "VMs, live migration, snapshots, autoscaling" },
-        { label: "Software-defined infra", desc: "Network + storage managed as code" },
-        { label: "Open source core", desc: "Auditable, extensible, community-driven" },
+        { label: "Integrated platform for your services", desc: "Run services, Kubernetes clusters, databases, and containers on Superphenix, alongside your VMs." },
+        { label: "Open source", desc: "Auditable, extensible, community-driven" },
       ],
     },
     pillars: {
@@ -47,7 +47,7 @@ const translations = {
       title: "Infrastructure, reimagined",
       items: [
         { title: "Kubernetes as Control Plane", desc: "Unified orchestration for compute, storage, and network through Kubernetes-native APIs." },
-        { title: "Virtualization on K8s", desc: "Run full VM workloads alongside containers with KubeVirt, managed declaratively." },
+        { title: "Virtualization on K8s", desc: "Run full VM workloads alongside containers and in the same network domains, managed declaratively." },
         { title: "Software-Defined Storage", desc: "Block, file, and object storage with replication and disaster recovery." },
         { title: "Software-Defined Networking", desc: "VPCs, NAT, BGP, load balancing, firewalling, and tenant isolation." },
         { title: "GitOps & Automation", desc: "Install, upgrade, and provision resources through declarative pipelines." },
@@ -109,8 +109,8 @@ const translations = {
     },
     credibility: {
       tag: "Vision",
-      title: "Built by operators, not theorists",
-      description: "Superphenix was born from the real constraints of running a cloud service provider. Every design decision reflects production reality, not academic idealism.",
+      title: "Built in a real cloud service provider",
+      description: "Superphenix started from practical cloud provider needs and continues to evolve with production feedback.",
       items: [
         { value: "Production", label: "Proven in real CSP operations" },
         { value: "Sovereign", label: "Built for infrastructure independence" },
@@ -150,24 +150,24 @@ const translations = {
     },
     problem: {
       tag: "Le problème",
-      title: "La virtualisation legacy est une impasse",
-      description: "Les fournisseurs cloud ont bâti leur activité sur des stacks propriétaires. Aujourd'hui, ils sont piégés: payant plus pour moins, incapables d'innover, enfermés dans des architectures qui ne passent pas à l'échelle.",
+      title: "Les solutions propriétaires legacy sont une impasse",
+      description: "Les fournisseurs cloud se sont construits sur des stacks propriétaires et se retrouvent piégés : plus de coûts, moins de contrôle, moins d'innovation.",
       items: [
-        { title: "Dépendance fournisseur", description: "Les stacks de virtualisation propriétaires créent des dépendances profondes. En sortir coûte des années et des millions." },
-        { title: "Coûts de licences croissants", description: "Les hausses de prix post-acquisition frappent durement les petits et moyens fournisseurs cloud. Les marges s'évaporent." },
-        { title: "Économie fragile", description: "Les architectures legacy n'ont pas été conçues pour l'échelle actuelle. La complexité opérationnelle s'amplifie à chaque nœud ajouté." },
+        { title: "Dépendance fournisseur", description: "Les stacks cloud propriétaires comme VMware ou Nutanix créent des dépendances profondes." },
+        { title: "Coûts de licences croissants", description: "Les prix augmentent et les fournisseurs ont peu de levier. Les marges peuvent disparaître du jour au lendemain si les éditeurs le décident." },
+        { title: "Économie fragile", description: "Les architectures legacy ne sont pas conçues pour les usages actuels. La plupart des stacks cloud couvrent une couche, pas tout le spectre de l'IaaS au PaaS et au SaaS." },
       ],
     },
     platform: {
       tag: "Qu'est-ce que Superphenix",
-      title: "Une stack cloud complète sur Kubernetes",
-      description: "Superphenix transforme Kubernetes en plateforme cloud complète : virtualisation, réseau, stockage et opérations pilotées par GitOps. Créez une infrastructure de niveau CSP sans verrouillage propriétaire.",
-      origin: "Né de contraintes réelles d'exploitation CSP, Superphenix est désormais un projet open source pour les équipes qui veulent une infrastructure souveraine, transparente et prête pour la production.",
+      title: "Une stack cloud complète sur votre propre matériel",
+      description: "Superphenix transforme votre matériel en plateforme cloud complète : virtualisation, réseau, stockage et opérations de service pilotées depuis une console ou via GitOps.",
+      origin: "Né chez un fournisseur cloud qui voulait sortir de sa stack legacy, Superphenix est aujourd'hui un projet open source pour les équipes qui visent une infrastructure souveraine, transparente et prête pour la production.",
       items: [
-        { label: "Control plane Kubernetes", desc: "Une surface API unique pour tout" },
+        { label: "Basé sur Kubernetes", desc: "Superphenix s'appuie sur Kubernetes comme control plane sous-jacent, avec une API unique pour tout gérer." },
         { label: "Virtualisation", desc: "VMs, live migration, snapshots, autoscaling" },
-        { label: "Infra software-defined", desc: "Réseau + stockage gérés comme du code" },
-        { label: "Cœur open source", desc: "Auditable, extensible, communautaire" },
+        { label: "Plateforme intégrée pour vos services", desc: "Exécutez services, clusters Kubernetes, bases de données et conteneurs sur Superphenix, à côté de vos VMs." },
+        { label: "Open source", desc: "Auditable, extensible, communautaire" },
       ],
     },
     pillars: {
@@ -175,7 +175,7 @@ const translations = {
       title: "L'infrastructure, réinventée",
       items: [
         { title: "Kubernetes comme Control Plane", desc: "Orchestration unifiée du calcul, du stockage et du réseau via des APIs Kubernetes-natives." },
-        { title: "Virtualisation sur K8s", desc: "Exécutez des charges VM complètes aux côtés des conteneurs avec KubeVirt, de manière déclarative." },
+        { title: "Virtualisation sur K8s", desc: "Exécutez des charges VM complètes aux côtés des conteneurs et dans les mêmes domaines réseau, de manière déclarative." },
         { title: "Stockage Software-Defined", desc: "Stockage bloc, fichier et objet avec réplication et reprise après sinistre." },
         { title: "Réseau Software-Defined", desc: "VPC, NAT, BGP, load balancing, firewalling et isolation multi-tenant." },
         { title: "GitOps & Automatisation", desc: "Installez, mettez à niveau et provisionnez de façon déclarative." },
@@ -237,8 +237,8 @@ const translations = {
     },
     credibility: {
       tag: "Vision",
-      title: "Construit par des opérateurs, pas des théoriciens",
-      description: "Superphenix est né des contraintes réelles de l'exploitation d'un fournisseur cloud. Chaque décision de conception reflète la réalité de la production, pas l'idéalisme académique.",
+      title: "Construit chez un véritable fournisseur cloud",
+      description: "Superphenix est né de besoins concrets d'exploitation cloud et continue d'évoluer avec les retours de production.",
       items: [
         { value: "Production", label: "Éprouvé en exploitation CSP réelle" },
         { value: "Souverain", label: "Conçu pour l'indépendance infrastructurelle" },
