@@ -11,7 +11,6 @@ npm run dev
 
 ```sh
 npm run lint
-npm run test
 npm run build
 ```
 
@@ -20,7 +19,7 @@ npm run build
 1. Create a GitHub repository and push this project (default branch `main`).
 2. In the repository, go to **Settings → Pages**.
 3. Under **Build and deployment**, set **Source** to **GitHub Actions** (not “Deploy from a branch”).
-4. The workflow [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml) runs on every push to `main`: it installs dependencies, runs lint and tests, builds the site, copies `index.html` to `404.html` for client-side routing, and publishes the `dist` folder to Pages.
+4. The workflow [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml) runs on every push to `main`: it installs dependencies, runs lint, builds the site, copies `index.html` to `404.html` for client-side routing, and publishes the `dist` folder to Pages.
 
 **Base URL**
 
