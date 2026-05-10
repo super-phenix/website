@@ -1,3 +1,4 @@
+import { Github } from "lucide-react";
 import logo from "@/assets/SPX.svg";
 import { useLanguage } from "@/contexts/LanguageContext";
 import translations from "@/i18n/translations";
@@ -17,6 +18,15 @@ const Navbar = () => {
             <a href="#superphenix" className="hover:text-foreground transition-colors">{t.platform}</a>
             <a href="#pillars" className="hover:text-foreground transition-colors">{t.architecture}</a>
             <a href="https://docs.superphenix.net" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">{t.docs}</a>
+            <a
+              href="https://github.com/super-phenix/superphenix"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 hover:text-foreground transition-colors"
+            >
+              <Github className="h-3.5 w-3.5 shrink-0 opacity-80" aria-hidden />
+              {t.github}
+            </a>
           </div>
         </div>
         <div className="flex items-center gap-2 sm:gap-4">

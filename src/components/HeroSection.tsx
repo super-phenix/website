@@ -46,14 +46,16 @@ const HeroSection = () => {
         >
           <img src={heroImage} alt="" className="h-12 w-auto object-contain invert dark:invert-0 sm:h-14 md:h-16" />
         </motion.div>
-        <motion.h1
-          className="mb-4 max-w-3xl mx-auto text-center text-3xl font-bold tracking-tight text-foreground leading-tight sm:text-4xl md:text-5xl"
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.05, ease: [0.25, 0.46, 0.45, 0.94] }}
-        >
-          {t.title}
-        </motion.h1>
+        <h1 className="mb-4 max-w-3xl mx-auto text-center text-3xl font-bold tracking-tight text-foreground leading-tight sm:text-4xl md:text-5xl">
+          <motion.span
+            className="block"
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.05, ease: [0.25, 0.46, 0.45, 0.94] }}
+          >
+            {t.title}
+          </motion.span>
+        </h1>
 
         <div className="flex w-full max-w-3xl flex-col items-center gap-5 text-center">
           <motion.p
