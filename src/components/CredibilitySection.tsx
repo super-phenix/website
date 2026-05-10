@@ -8,7 +8,7 @@ const CredibilitySection = () => {
   const t = translations[lang].credibility;
 
   return (
-    <AnimatedSection className="relative py-32">
+    <AnimatedSection className="relative pt-20 pb-32">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-xs font-mono text-muted-foreground mb-4 tracking-wider uppercase">{t.tag}</p>
