@@ -3,6 +3,8 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ProblemSection from "@/components/ProblemSection";
 import PlatformSection from "@/components/PlatformSection";
+import FeaturesSection from "@/components/FeaturesSection";
+import InstallModesSection from "@/components/InstallModesSection";
 import PillarsSection from "@/components/PillarsSection";
 import OpenSourceSection from "@/components/OpenSourceSection";
 import EnterpriseSection from "@/components/EnterpriseSection";
@@ -17,10 +19,12 @@ const Index = () => {
         <HeroSection />
         <ProblemSection />
         <PlatformSection />
+        <FeaturesSection />
+        <InstallModesSection />
         <PillarsSection />
         <OpenSourceSection />
-        <EnterpriseSection />
         <CredibilitySection />
+        <EnterpriseSection />
         <FooterCTA />
       </div>
     </LanguageProvider>

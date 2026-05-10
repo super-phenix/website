@@ -34,13 +34,13 @@ const OpenSourceSection = () => {
           <Card className="border-border">
             <CardContent className="p-8 font-mono text-sm space-y-3">
               <p className="text-muted-foreground">
-                <span className="text-foreground">$</span> git clone https://github.com/super-phenix/superphenix
+                <span className="text-foreground">$</span> git clone git@github.com:super-phenix/superphenix.git
               </p>
               <p className="text-muted-foreground">
-                <span className="text-foreground">$</span> cd superphenix
+                <span className="text-foreground">$</span> helm install charts.superphenix.net/superphenix-operator:latest
               </p>
               <p className="text-muted-foreground">
-                <span className="text-foreground">$</span> make deploy CLUSTER=production
+                <span className="text-foreground">$</span> kubectl apply -f superphenix/examples/cluster.yaml
               </p>
               <div className="border-t border-border pt-3 mt-3">
                 <p className="text-muted-foreground/60 text-xs">{t.comment}</p>

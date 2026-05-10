@@ -42,6 +42,27 @@ const translations = {
         { label: "Open source", desc: "Auditable, extensible, community-driven" },
       ],
     },
+    features: {
+      tag: "Features",
+      title: "What SPX includes out of the box",
+      description: "Superphenix combines core cloud building blocks and day-2 operations in one stack.",
+      items: [
+        { title: "Hypervisor", desc: "VMs, live migration, snapshots, and node autoscaling." },
+        { title: "Storage", desc: "Block, file, and S3 storage with replication and disaster recovery." },
+        { title: "Software-defined network", desc: "VPCs, NAT gateways, BGP, load balancing, QoS, and firewalling." },
+        { title: "PaaS and SaaS", desc: "Kubernetes as a Service plus managed apps like databases, Harbor, GitLab, and Nextcloud." },
+      ],
+    },
+    installModes: {
+      tag: "Installation",
+      title: "Deployment topology and install modes",
+      description: "Superphenix supports hyperconverged and decoupled deployment topology, with multi-AZ operations from a central control plane.",
+      items: [
+        { title: "Hyperconverged topology", desc: "Best for single-AZ deployments, PoCs, and teams that want the simplest setup with shared compute and storage nodes." },
+        { title: "Decoupled topology", desc: "Best for performance-focused and multi-AZ deployments where storage and virtualization are separated and scaled independently." },
+        { title: "Multi-AZ operations", desc: "Run a management cluster outside workload AZs to operate multiple AZs from one neutral control plane." },
+      ],
+    },
     pillars: {
       tag: "Core Pillars",
       title: "Infrastructure, reimagined",
@@ -64,7 +85,7 @@ const translations = {
         "Production-backed architecture from real CSP constraints",
         "Open integration with upstream cloud-native projects",
       ],
-      comment: "# Your cloud. Your rules. Your code.",
+      comment: "# Open architecture. Clear operations.",
     },
     enterprise: {
       tag: "Enterprise Support",
@@ -170,6 +191,27 @@ const translations = {
         { label: "Open source", desc: "Auditable, extensible, communautaire" },
       ],
     },
+    features: {
+      tag: "Fonctionnalités",
+      title: "Ce que SPX propose nativement",
+      description: "Superphenix regroupe les briques cloud essentielles et les opérations day-2 dans une seule stack.",
+      items: [
+        { title: "Hyperviseur", desc: "VMs, live migration, snapshots et autoscaling des nœuds." },
+        { title: "Stockage", desc: "Stockage bloc, fichier et S3 avec réplication et reprise après sinistre." },
+        { title: "Réseau software-defined", desc: "VPC, NAT gateways, BGP, load balancing, QoS et firewalling." },
+        { title: "PaaS et SaaS", desc: "Kubernetes as a Service et applications managées comme bases de données, Harbor, GitLab et Nextcloud." },
+      ],
+    },
+    installModes: {
+      tag: "Installation",
+      title: "Topologie de déploiement et modes d'installation",
+      description: "Superphenix prend en charge les topologies de déploiement hyperconvergée et découplée, avec une exploitation multi-AZ via un plan de contrôle central.",
+      items: [
+        { title: "Topologie hyperconvergée", desc: "Idéale pour les déploiements mono-AZ, les PoCs et les équipes qui veulent une architecture simple avec nœuds mutualisés calcul/stockage." },
+        { title: "Topologie découplée", desc: "Idéale pour les déploiements orientés performance et multi-AZ, où stockage et virtualisation sont séparés et évoluent indépendamment." },
+        { title: "Exploitation multi-AZ", desc: "Déployez un cluster de management hors des AZs de charge pour piloter plusieurs AZs depuis un plan de contrôle neutre." },
+      ],
+    },
     pillars: {
       tag: "Piliers fondamentaux",
       title: "L'infrastructure, réinventée",
@@ -192,7 +234,7 @@ const translations = {
         "Architecture validée par des usages réels de CSP",
         "Intégration ouverte avec l'écosystème cloud-native",
       ],
-      comment: "# Votre cloud. Vos règles. Votre code.",
+      comment: "# Architecture ouverte. Exploitation claire.",
     },
     enterprise: {
       tag: "Support entreprise",
