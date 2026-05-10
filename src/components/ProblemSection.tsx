@@ -1,10 +1,10 @@
-import { AlertTriangle, Lock, TrendingDown } from "lucide-react";
+import { AlertTriangle, Lock, TrendingUp } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import translations from "@/i18n/translations";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { AnimatedSection, AnimatedItem } from "@/components/AnimatedSection";
 
-const icons = [Lock, TrendingDown, AlertTriangle];
+const icons = [Lock, TrendingUp, AlertTriangle];
 
 const ProblemSection = () => {
   const { lang } = useLanguage();
