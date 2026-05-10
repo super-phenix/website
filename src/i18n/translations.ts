@@ -96,7 +96,7 @@ const translations = {
     },
     enterprise: {
       tag: "Enterprise Support",
-      title: "Optional commercial support for Superphenix",
+      title: "Need help with your enterprise needs?",
       description: "Superphenix stays open and self-hostable by default. For organizations with critical infrastructures, Rayshift can provide enterprise support and implementation services.",
       items: [
         { title: "Enterprise Features", desc: "Advanced multi-tenancy, IAM, governance, and operational controls for large environments." },
@@ -224,7 +224,7 @@ const translations = {
     },
     enterprise: {
       tag: "Support entreprise",
-      title: "Support commercial optionnel pour Superphenix",
+      title: "Besoin d'aide pour vos besoins en entreprise ?",
       description: "Superphenix reste open source et auto-hébergeable par défaut. Pour les organisations avec des infrastructures critiques, Rayshift propose du support entreprise et des services d'implémentation.",
       items: [
         { title: "Fonctionnalités entreprise", desc: "Contrôles avancés pour le multi-tenant, IAM, gouvernance et exploitation à grande échelle." },
