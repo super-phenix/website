@@ -25,6 +25,8 @@ npm run build
 
 - For a normal repository served at `https://<user>.github.io/<repo>/`, the workflow sets `VITE_BASE_PATH=/<repo>/` so assets and routes resolve correctly.
 - For a user or organization site repository named `<user>.github.io`, it sets `VITE_BASE_PATH=/` so the site is served from the domain root.
+- For custom domains (repository contains a `CNAME` file), it sets `VITE_BASE_PATH=/`.
+- You can override this explicitly with a GitHub repository variable named `VITE_BASE_PATH` (for example `/` or `/website/`).
 
 To preview a GitHub Pages build locally:
 

@@ -27,11 +27,11 @@ jobs:
 
       - name: Set Vite base path for GitHub Pages
         run: |
-          NAME="${{ github.event.repository.name }}"
-          if [[ "$NAME" == *.github.io ]]; then
-            echo "VITE_BASE_PATH=/" >> "$GITHUB_ENV"
+          if [[ -n "${{ vars.VITE_BASE_PATH }}" ]]; then
+            echo "VITE_BASE_PATH=${{ vars.VITE_BASE_PATH }}" >> "$GITHUB_ENV"
           else
-            echo "VITE_BASE_PATH=/${NAME}/" >> "$GITHUB_ENV"
+            # With a CNAME (custom domain), or by default, serve from root.
+            echo "VITE_BASE_PATH=/" >> "$GITHUB_ENV"
           fi
 
       - run: npm ci
