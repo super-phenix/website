@@ -3,22 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Superphenix</title>
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#080808" media="(prefers-color-scheme: dark)" />
+
+    <title>Superphenix — Build your own cloud platform | Kubernetes IaaS, PaaS &amp; GitOps</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <meta name="description" content="Superphenix is an open-source cloud platform on Kubernetes: virtualization, storage, networking, GitOps, and multi-AZ operations. Optional enterprise support is available from Rayshift." />
-    <meta name="keywords" content="Superphenix, Kubernetes cloud platform, IaaS, PaaS, SaaS, GitOps, KubeVirt, software-defined network, cloud storage, multi-AZ, VMware alternative, sovereign cloud, Rayshift support" />
-    <meta name="author" content="Superphenix Project" />
     <link rel="canonical" href="https://superphenix.net/" />
 
-    <meta property="og:title" content="Superphenix: Build Your Cloud on Kubernetes" />
-    <meta property="og:description" content="Open-source cloud stack for VMs, networking, storage, and GitOps automation. Deploy Superphenix yourself, with optional enterprise support from Rayshift." />
+    <meta
+      name="description"
+      content="Superphenix runs a full cloud stack on your hardware: Kubernetes control plane, VMs, software-defined networking and storage, GitOps, and multi-AZ. Open-first; optional Rayshift enterprise support. Documentation at docs.superphenix.net."
+    />
+    <meta
+      name="keywords"
+      content="Superphenix, Kubernetes cloud platform, sovereign cloud, private cloud, IaaS, PaaS, SaaS, GitOps, KubeVirt, virtualization, software-defined networking, SDN, cloud storage, S3-compatible storage, multi-AZ, hyperconverged infrastructure, VMware alternative, Nutanix alternative, open source cloud, Rayshift, cloud service provider, CSP infrastructure"
+    />
+    <meta name="author" content="Superphenix Project" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <meta property="og:site_name" content="Superphenix" />
+    <meta property="og:title" content="Build your own cloud platform with Superphenix." />
+    <meta
+      property="og:description"
+      content="Kubernetes-native IaaS through SaaS on your own hardware: VMs, VPCs, storage, GitOps, multi-AZ. Open source–first platform with documentation and optional enterprise support."
+    />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://superphenix.net/" />
     <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://superphenix.net/dashboard-light.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="Superphenix cloud console — dashboard for infrastructure and operations" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Superphenix: Open Cloud Platform on Kubernetes" />
-    <meta name="twitter:description" content="Build your own cloud with Superphenix. Open-source virtualization, storage, networking, and GitOps, with optional enterprise support from Rayshift." />
+    <meta name="twitter:title" content="Build your own cloud platform with Superphenix." />
+    <meta
+      name="twitter:description"
+      content="Kubernetes-native IaaS through SaaS on your own hardware: VMs, VPCs, storage, GitOps, multi-AZ. Open source–first; docs and optional enterprise support."
+    />
+    <meta name="twitter:image" content="https://superphenix.net/dashboard-light.png" />
+    <meta name="twitter:image:alt" content="Superphenix cloud console — dashboard for infrastructure and operations" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://superphenix.net/#organization",
+            "name": "Superphenix Project",
+            "url": "https://superphenix.net/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://superphenix.net/favicon.svg"
+            },
+            "sameAs": ["https://github.com/super-phenix/superphenix"]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://superphenix.net/#website",
+            "name": "Superphenix",
+            "url": "https://superphenix.net/",
+            "description": "Build your own cloud platform with Superphenix — Kubernetes-native IaaS, PaaS, and SaaS on your hardware, with GitOps and multi-AZ operations.",
+            "inLanguage": ["en", "fr"],
+            "publisher": { "@id": "https://superphenix.net/#organization" },
+            "about": { "@id": "https://superphenix.net/#software" }
+          },
+          {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://superphenix.net/#software",
+            "name": "Superphenix",
+            "url": "https://superphenix.net/",
+            "description": "Full-stack cloud platform using Kubernetes as control plane: virtualization, software-defined networking and storage, managed services, observability, and GitOps-based lifecycle.",
+            "codeRepository": "https://github.com/super-phenix/superphenix",
+            "runtimePlatform": "Kubernetes",
+            "maintainer": { "@id": "https://superphenix.net/#organization" }
+          }
+        ]
+      }
+    </script>
   </head>
 
   <body>

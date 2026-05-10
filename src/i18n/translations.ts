@@ -9,7 +9,7 @@ const translations = {
       themeToDark: "Switch to dark mode",
     },
     hero: {
-      title: "Build your own cloud platform with Superphenix.",
+      title: "Build your own cloud platform with Superphenix",
       subtitle: "IaaS · PaaS · SaaS · GitOps · Multi-AZ",
       cta1: "Discover Superphenix",
       cta2: "Documentation",
@@ -92,7 +92,7 @@ const translations = {
         "Production-backed architecture from real CSP constraints",
         "Open integration with upstream cloud-native projects",
       ],
-      comment: "# Open architecture. Clear operations.",
+      comment: "# Open architecture. Simple operations.",
     },
     enterprise: {
       tag: "Enterprise Support",
@@ -119,7 +119,7 @@ const translations = {
     },
     footer: {
       title: "Start building sovereign infrastructure",
-      description: "Use Superphenix as open source, and contact Rayshift if you need enterprise support or migration help.",
+      description: "Use Superphenix open source, and contact Rayshift if you need enterprise support or migration help.",
       ctaEmail: "Enterprise Support",
       ctaGithub: "View on GitHub",
       rights: "© 2026 Superphenix Project",
@@ -137,7 +137,7 @@ const translations = {
       themeToDark: "Passer en mode sombre",
     },
     hero: {
-      title: "Construisez votre propre plateforme cloud avec Superphenix.",
+      title: "Construisez votre propre plateforme cloud avec Superphenix",
       subtitle: "IaaS · PaaS · SaaS · GitOps · Multi-AZ",
       cta1: "Découvrir Superphenix",
       cta2: "Documentation",
@@ -220,7 +220,7 @@ const translations = {
         "Architecture validée par des usages réels de CSP",
         "Intégration ouverte avec l'écosystème cloud-native",
       ],
-      comment: "# Architecture ouverte. Exploitation claire.",
+      comment: "# Architecture ouverte. Exploitation simple.",
     },
     enterprise: {
       tag: "Support entreprise",
@@ -247,7 +247,7 @@ const translations = {
     },
     footer: {
       title: "Commencez à construire une infrastructure souveraine",
-      description: "Déployez Superphenix en open source, puis contactez Rayshift uniquement si vous avez besoin de support entreprise ou de migration.",
+      description: "Déployez Superphenix en open source, puis contactez Rayshift si vous avez besoin de support entreprise ou de migration.",
       ctaEmail: "Support entreprise",
       ctaGithub: "Voir sur GitHub",
       rights: "© 2026 Projet Superphenix",
