@@ -4,7 +4,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import translations from "@/i18n/translations";
 import { Button } from "@/components/ui/button";
 import ConsoleBrowserMockup from "@/components/ConsoleBrowserMockup";
-import heroImage from "@/assets/SPX.svg";
+import heroImage from "@/assets/SPX_black.svg";
 
 /** Start of 1 September 2026 in the viewer's local timezone */
 const OPEN_SOURCE_AT = new Date(2026, 8, 1, 0, 0, 0, 0);

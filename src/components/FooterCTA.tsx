@@ -1,4 +1,4 @@
-import logo from "@/assets/SPX.svg";
+import logo from "@/assets/SPX_black.svg";
 import { Github, ArrowUpRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import translations from "@/i18n/translations";

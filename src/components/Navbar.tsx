@@ -1,5 +1,5 @@
 import { Github } from "lucide-react";
-import logo from "@/assets/SPX.svg";
+import logo from "@/assets/SPX_black.svg";
 import { useLanguage } from "@/contexts/LanguageContext";
 import translations from "@/i18n/translations";
 import { Button } from "@/components/ui/button";
