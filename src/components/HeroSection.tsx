@@ -59,7 +59,7 @@ const HeroSection = () => {
 
         <div className="flex w-full max-w-3xl flex-col items-center gap-5 text-center">
           <motion.p
-            className="w-full text-center text-sm font-mono text-muted-foreground/70"
+            className="w-full text-center text-sm font-mono text-muted-foreground/70 dark:text-muted-foreground/90"
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
@@ -117,13 +117,13 @@ const HeroSection = () => {
       <div className="relative z-10 mx-auto w-full max-w-[1296px] px-6">
         <ConsoleBrowserMockup />
         <motion.div
-          className="mt-12 flex items-center justify-center gap-8 font-mono text-xs text-muted-foreground/50 sm:mt-16"
+          className="mt-12 flex items-center justify-center gap-8 font-mono text-xs text-muted-foreground/70 dark:text-muted-foreground/85 sm:mt-16"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           <span>{t.builtBy}</span>
-          <span className="h-3 w-px bg-border" />
+          <span className="h-3 w-px bg-border/80 dark:bg-border/95" />
           <span>{t.proven}</span>
         </motion.div>
       </div>
