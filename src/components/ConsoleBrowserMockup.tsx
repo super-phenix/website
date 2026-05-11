@@ -1,9 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
-import { Moon, Sun } from "lucide-react";
-import { useLanguage } from "@/contexts/LanguageContext";
-import translations from "@/i18n/translations";
-import { Button } from "@/components/ui/button";
+import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
 
 const CONSOLE_URL = "https://console.superphenix.net";
@@ -11,9 +8,15 @@ const DASHBOARD_LIGHT = "/dashboard-light.png";
 const DASHBOARD_DARK = "/dashboard-dark.png";
 
 const ConsoleBrowserMockup = () => {
-  const { lang } = useLanguage();
-  const t = translations[lang].consoleMockup;
-  const [isDark, setIsDark] = React.useState(false);
+  const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Avoid hydration mismatch: render a stable light preview until mounted.
+  const isDark = mounted && resolvedTheme === "dark";
   const dashboardSrc = isDark ? DASHBOARD_DARK : DASHBOARD_LIGHT;
 
   return (
@@ -37,16 +40,7 @@ const ConsoleBrowserMockup = () => {
               </span>
             </div>
           </div>
-          <Button
-            type="button"
-            variant="ghost"
-            size="icon"
-            className="h-9 w-9 shrink-0 text-muted-foreground hover:bg-muted hover:text-foreground"
-            onClick={() => setIsDark((d) => !d)}
-            aria-label={isDark ? t.switchToLight : t.switchToDark}
-          >
-            {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-          </Button>
+          <span className="w-9 shrink-0" aria-hidden />
         </div>
         <div
           className={cn(
