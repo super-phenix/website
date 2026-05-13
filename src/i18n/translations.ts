@@ -17,10 +17,6 @@ const translations = {
       builtBy: "Superphenix Project",
       proven: "Proven in production",
     },
-    consoleMockup: {
-      switchToDark: "Show dark dashboard preview",
-      switchToLight: "Show light dashboard preview",
-    },
     problem: {
       tag: "The Problem",
       title: "Legacy proprietary solutions are a dead end",
@@ -123,7 +119,7 @@ const translations = {
       description: "Use Superphenix open source, and contact Rayshift if you need enterprise support or migration help.",
       ctaEmail: "Enterprise Support",
       ctaGithub: "View on GitHub",
-      rights: "© 2026 Superphenix Project",
+      rights: "© 2026 The Superphenix Project",
       docs: "Documentation",
       github: "GitHub",
     },
@@ -145,10 +141,6 @@ const translations = {
       cta2: "Documentation",
       builtBy: "Projet Superphenix",
       proven: "Éprouvé en production",
-    },
-    consoleMockup: {
-      switchToDark: "Afficher l'aperçu sombre du tableau de bord",
-      switchToLight: "Afficher l'aperçu clair du tableau de bord",
     },
     problem: {
       tag: "Le problème",
@@ -252,7 +244,7 @@ const translations = {
       description: "Déployez Superphenix en open source, puis contactez Rayshift si vous avez besoin de support entreprise ou de migration.",
       ctaEmail: "Support entreprise",
       ctaGithub: "Voir sur GitHub",
-      rights: "© 2026 Projet Superphenix",
+      rights: "© 2026 The Superphenix Project",
       docs: "Documentation",
       github: "GitHub",
     },

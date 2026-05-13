@@ -10,7 +10,7 @@ const FooterCTA = () => {
   const t = translations[lang].footer;
 
   return (
-    <footer id="contact" className="relative py-32 border-t border-border">
+    <footer id="contact" className="relative border-t border-border pt-32 pb-32">
       <div className="container mx-auto px-6">
         <motion.div
           className="text-center mb-24"
@@ -34,8 +34,10 @@ const FooterCTA = () => {
             </Button>
           </div>
         </motion.div>
+      </div>
 
-        <div className="border-t border-border pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div className="w-full border-t border-border">
+        <div className="container mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <img src={logo} alt="Superphenix" className="h-5 opacity-70 invert dark:invert-0" />
             <span className="text-xs text-muted-foreground">{t.rights}</span>
