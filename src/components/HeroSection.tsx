@@ -6,8 +6,10 @@ import { Button } from "@/components/ui/button";
 import ConsoleBrowserMockup from "@/components/ConsoleBrowserMockup";
 import heroImage from "@/assets/SPX_black.svg";
 
-/** Start of 1 September 2026 in the viewer's local timezone */
-const OPEN_SOURCE_AT = new Date(2026, 8, 1, 0, 0, 0, 0);
+const GITHUB_REPO = "https://github.com/super-phenix/superphenix";
+
+/** Start of 14 September 2026 in the viewer's local timezone */
+const OPEN_SOURCE_AT = new Date(2026, 8, 14, 0, 0, 0, 0);
 
 function getCountdownParts(now: number) {
   const end = OPEN_SOURCE_AT.getTime();
@@ -89,26 +91,33 @@ const HeroSection = () => {
           >
             <p className="font-mono text-xs text-muted-foreground uppercase tracking-wider mb-1">{openSource.countdownIntro}</p>
             <p className="font-mono text-sm text-foreground mb-4">{openSource.countdownDate}</p>
-            {countdown.expired ? (
-              <p className="text-sm font-medium text-foreground">{openSource.countdownLive}</p>
-            ) : (
-              <div className="grid grid-cols-4 gap-2 sm:gap-4 text-center">
-                {(
-                  [
-                    [countdown.d, openSource.countdownDays],
-                    [countdown.h, openSource.countdownHours],
-                    [countdown.m, openSource.countdownMinutes],
-                    [countdown.s, openSource.countdownSeconds],
-                  ] as const
-                ).map(([value, label]) => (
-                  <div key={label}>
-                    <div className="font-mono text-2xl sm:text-3xl font-semibold tabular-nums text-foreground">
-                      {String(value).padStart(2, "0")}
-                    </div>
-                    <div className="mt-1 text-[10px] sm:text-xs text-muted-foreground uppercase tracking-wide">{label}</div>
+            <div className="grid grid-cols-4 gap-2 sm:gap-4 text-center">
+              {(
+                [
+                  [countdown.d, openSource.countdownDays],
+                  [countdown.h, openSource.countdownHours],
+                  [countdown.m, openSource.countdownMinutes],
+                  [countdown.s, openSource.countdownSeconds],
+                ] as const
+              ).map(([value, label]) => (
+                <div key={label}>
+                  <div className="font-mono text-2xl sm:text-3xl font-semibold tabular-nums text-foreground">
+                    {String(value).padStart(2, "0")}
                   </div>
-                ))}
-              </div>
+                  <div className="mt-1 text-[10px] sm:text-xs text-muted-foreground uppercase tracking-wide">{label}</div>
+                </div>
+              ))}
+            </div>
+            {countdown.expired && (
+              <Button
+                asChild
+                size="lg"
+                className="mt-5 mx-auto bg-green-600 text-white hover:bg-green-700 dark:bg-green-600 dark:hover:bg-green-500"
+              >
+                <a href={GITHUB_REPO} target="_blank" rel="noopener noreferrer">
+                  {openSource.countdownNowOpenSource}
+                </a>
+              </Button>
             )}
           </motion.div>
         </div>
