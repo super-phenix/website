@@ -8,8 +8,8 @@ import heroImage from "@/assets/SPX_black.svg";
 
 const GITHUB_REPO = "https://github.com/super-phenix/superphenix";
 
-/** Start of 14 September 2026 in the viewer's local timezone */
-const OPEN_SOURCE_AT = new Date(2026, 8, 14, 0, 0, 0, 0);
+/** 15 September 2026, 15:00 Europe/Paris (CEST, UTC+2) */
+const OPEN_SOURCE_AT = new Date("2026-09-15T15:00:00+02:00");
 
 function getCountdownParts(now: number) {
   const end = OPEN_SOURCE_AT.getTime();
