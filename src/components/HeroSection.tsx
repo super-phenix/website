@@ -46,7 +46,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
-          <img src={heroImage} alt="" className="h-12 w-auto object-contain invert dark:invert-0 sm:h-14 md:h-16" />
+          <img src={heroImage} alt="" className="h-[5.85rem] w-auto object-contain dark:invert sm:h-[6.825rem] md:h-[7.8rem]" />
         </motion.div>
         <h1 className="mb-4 max-w-3xl mx-auto text-center text-3xl font-bold tracking-tight text-foreground leading-tight sm:text-4xl md:text-5xl">
           <motion.span

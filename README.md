@@ -8,7 +8,8 @@
 
 <p align="center">
   <strong>
-    An Opensource IaaS/PaaS/SaaS platform based on Kubernetes. Build your own cloud provider wherever you want.
+    An Opensource IaaS/PaaS/SaaS platform based on Kubernetes.<br>
+    Build your own cloud platform with Superphenix.
   </strong>
 </p>
 

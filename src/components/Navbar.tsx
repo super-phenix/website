@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="container mx-auto flex h-16 items-center justify-between px-6">
         <div className="flex items-center gap-8">
           <a href="https://superphenix.net/" aria-label="Superphenix">
-            <img src={logo} alt="Superphenix" className="h-7 invert dark:invert-0" />
+            <img src={logo} alt="Superphenix" className="h-10 dark:invert" />
           </a>
           <div className="hidden md:flex items-center gap-6 text-sm text-muted-foreground">
             <a href="#superphenix" className="hover:text-foreground transition-colors">{t.platform}</a>
