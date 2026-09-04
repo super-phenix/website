@@ -1,8 +1,8 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="src/assets/SPX_white.svg">
-    <source media="(prefers-color-scheme: light)" srcset="src/assets/SPX_black.svg">
-    <img alt="Superphenix" src="src/assets/SPX_white.svg" width="350" height="200">
+    <source media="(prefers-color-scheme: dark)" srcset="src/assets/faviconwhite.svg">
+    <source media="(prefers-color-scheme: light)" srcset="src/assets/favicon.svg">
+    <img alt="Superphenix" src="src/assets/faviconwhite.svg" width="180" height="160">
   </picture>
 </p>
 

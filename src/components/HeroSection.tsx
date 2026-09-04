@@ -4,7 +4,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import translations from "@/i18n/translations";
 import { Button } from "@/components/ui/button";
 import ConsoleBrowserMockup from "@/components/ConsoleBrowserMockup";
-import heroImage from "@/assets/SPX_black.svg";
+import heroImage from "@/assets/spx.svg";
 
 const GITHUB_REPO = "https://github.com/super-phenix/superphenix";
 
@@ -46,7 +46,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
-          <img src={heroImage} alt="" className="h-[5.85rem] w-auto object-contain dark:invert sm:h-[6.825rem] md:h-[7.8rem]" />
+          <img src={heroImage} alt="" className="h-12 w-auto max-w-full object-contain dark:invert sm:h-16 md:h-20" />
         </motion.div>
         <h1 className="mb-4 max-w-3xl mx-auto text-center text-3xl font-bold tracking-tight text-foreground leading-tight sm:text-4xl md:text-5xl">
           <motion.span

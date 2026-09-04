@@ -1,4 +1,4 @@
-import logo from "@/assets/SPX_black.svg";
+import logo from "@/assets/spx.svg";
 import { Github, ArrowUpRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import translations from "@/i18n/translations";
@@ -39,7 +39,7 @@ const FooterCTA = () => {
       <div className="w-full border-t border-border">
         <div className="container mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <img src={logo} alt="Superphenix" className="h-5 opacity-70 invert dark:invert-0" />
+            <img src={logo} alt="Superphenix" className="h-5 opacity-70 dark:invert" />
             <span className="text-xs text-muted-foreground">{t.rights}</span>
           </div>
           <div className="flex items-center gap-6 text-xs text-muted-foreground">
