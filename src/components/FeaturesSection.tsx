@@ -4,11 +4,13 @@ import translations from "@/i18n/translations";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { AnimatedSection, AnimatedItem } from "@/components/AnimatedSection";
 
-const icons = [Server, Database, Network, Layers];
+const iaasIcons = [Server, Database, Network];
 
 const FeaturesSection = () => {
   const { lang } = useLanguage();
   const t = translations[lang].features;
+  const iaasItems = t.items.slice(0, 3);
+  const paasItem = t.items[3];
 
   return (
     <AnimatedSection id="features" className="relative py-24">
@@ -19,9 +21,9 @@ const FeaturesSection = () => {
           <p className="text-muted-foreground">{t.description}</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-6">
-          {t.items.map((item, i) => {
-            const Icon = icons[i];
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {iaasItems.map((item, i) => {
+            const Icon = iaasIcons[i];
             return (
               <AnimatedItem key={item.title} index={i}>
                 <Card className="h-full border-border hover:border-foreground/15 transition-all duration-300">
@@ -37,6 +39,20 @@ const FeaturesSection = () => {
             );
           })}
         </div>
+
+        {paasItem && (
+          <AnimatedItem index={3} className="mt-6">
+            <Card className="border-border hover:border-foreground/15 transition-all duration-300">
+              <CardHeader className="sm:flex-row sm:items-start sm:gap-6 sm:space-y-0">
+                <Layers className="h-5 w-5 shrink-0 text-foreground sm:mt-0.5" />
+                <div>
+                  <h3 className="text-base font-semibold text-foreground">{paasItem.title}</h3>
+                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{paasItem.desc}</p>
+                </div>
+              </CardHeader>
+            </Card>
+          </AnimatedItem>
+        )}
       </div>
     </AnimatedSection>
   );

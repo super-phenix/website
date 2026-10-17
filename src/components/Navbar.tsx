@@ -20,6 +20,7 @@ const Navbar = () => {
             <a href="#superphenix" className="hover:text-foreground transition-colors">{t.platform}</a>
             <a href="#pillars" className="hover:text-foreground transition-colors">{t.architecture}</a>
             <a href="https://docs.superphenix.net" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">{t.docs}</a>
+            <a href="https://docs.superphenix.net/blog/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">{t.blog}</a>
             <a
               href="https://github.com/super-phenix/superphenix"
               target="_blank"
